@@ -1,0 +1,83 @@
+.appHeader {
+  width: 100%;
+  height: 70px;
+  padding: 0 20px; /* reduce padding for smaller screens */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4f46e5;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-sizing: border-box; /* ensures padding included in width */
+}
+
+.logo h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.navButtons {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0; /* prevent shrinking too much */
+  flex-wrap: wrap; /* wrap buttons if space is small */
+}
+
+.navButtons button {
+  padding: 6px 14px;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+  font-family: 'Roboto', sans-serif;
+  white-space: nowrap; /* prevent text wrap inside button */
+}
+
+.loginBtn {
+  background-color: #ffffff88;
+  color: #4f46e5;
+}
+
+.loginBtn:hover {
+  background-color: #ffffffcc;
+  transform: translateY(-2px);
+}
+
+.signupBtn {
+  background-color: #fff;
+  color: #4f46e5;
+  font-weight: 600;
+}
+
+.signupBtn:hover {
+  background-color: #e0e0ff;
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustment for small screens */
+@media (max-width: 480px) {
+  .appHeader {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .logo h1 {
+    font-size: 1.4rem;
+    margin-bottom: 6px;
+  }
+
+  .navButtons {
+    width: 100%;
+    justify-content: center;
+    gap: 8px;
+  }
+}

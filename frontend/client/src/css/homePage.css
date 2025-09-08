@@ -1,0 +1,46 @@
+.homePage {
+  padding: 100px 20px 60px; /* top padding for header, bottom for footer */
+  font-family: 'Roboto', sans-serif;
+  background-color: #f7f8fa;
+  min-height: calc(100vh - 140px);
+}
+
+.homePage h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: 'Nunito', sans-serif;
+  color: #4f46e5;
+}
+
+.subjectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.subjectCard {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.subjectCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.subjectCard h3 {
+  margin: 0 0 10px 0;
+  color: #4f46e5;
+}
+
+.subjectCard p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}

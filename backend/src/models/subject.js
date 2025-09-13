@@ -1,4 +1,5 @@
 // models/Subject.js
+
 const mongoose = require("mongoose");
 
 const SubjectSchema = new mongoose.Schema(
